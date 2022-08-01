@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="小河今学,小河今学后台管理,HTML,前端开发,Java大数据,PHP开发,Python人工智能">
+    <meta name="description" content="小河今学">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" cntent="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/css.css">
+    <title>小河今学后台管理</title>
+</head>
+<body>
+    <!-- 导航条 -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- 左侧内容 -->
+            <div class="navbar-header">
+                <!-- 菜单按钮 -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".cps">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- 动态Logo -->
+                <a href="index.html" class="navbar-brand"">小河今学后台管理系统</a>
+            </div>
+            
+            <!-- 右侧内容 -->
+            <div class="collapse navbar-collapse cps">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp后台管理</a></li>
+                    <li><a href="user.html"><span class="glyphicon glyphicon-user"></span>&nbsp用户管理</a></li>
+                    <li><a href="content.html"><span class="glyphicon glyphicon-th-list"></span>&nbsp内容管理</a></li>
+                    <li class="active"><a href="tips.html"><span class="glyphicon glyphicon-tags"></span>&nbsp标签管理</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-asterisk"></span>&nbsp前台首页</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp个人主页</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp个人设置</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-credit-card"></span>&nbsp账户中心</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp我的收藏</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:close();"><span class="glyphicon glyphicon-off"></span>&nbsp;退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 主体内容 -->
+    <div class="container">
+        <div class="row">
+            <!-- 内容 -->
+            <div class="col-md-10 col-sm-12">
+                <div class="page-header">
+                    <h3>TAG标签管理</h3>
+                </div>
+                <!-- 内容 -->
+                <div class="col-md-10 col-sm-12">
+                    <form action="">
+                        <input type="text" class="form-control" placeholder="请输入套添加的标签">
+                    </form>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <button class="btn btn-default">添加</button>
+                </div>
+                <div class="col-md-12">
+                    <div class="alert alert-info alert-dismissible pull-left" role="alert" id="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <strong>引导程序</strong>
+                    </div>
+                    <div class="alert alert-info alert-dismissible pull-left" role="alert" id="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <strong>前端开发</strong>
+                    </div>
+                    <div class="alert alert-info alert-dismissible pull-left" role="alert" id="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <strong>JavaScript</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer版权 -->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">© Copyright 2010-2030 求知讲堂在线教育 深ICP备14041383号 版权所有</div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script>
+    //点击小屏幕菜单跳转后立即关闭菜单
+    $('.navbar-collapse li').click(function(){
+        $('.navbar-collapse').collapse('hide');
+    });
+</script>
+</html>

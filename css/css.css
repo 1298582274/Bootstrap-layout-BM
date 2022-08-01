@@ -1,0 +1,30 @@
+.list-group li {
+    padding: 13px 15px;
+}
+
+.serve .panel-body {
+    padding: 25px 15px;
+}
+
+img {
+    width: 64px;
+    height: 64px;
+}
+
+#mes {
+    margin-top: 15px;
+}
+
+#footer {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.article {
+    margin-top: 10px;
+}
+
+#alert {
+    margin-top: 10px;
+    margin-right: 10px;
+}
